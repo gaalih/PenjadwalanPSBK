@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"></meta>
+	<title>Hello World</title>
+	<link href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"
+		rel="stylesheet" />
+	<link href="webjars/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+		rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	</link>
+</h:head>
+<h:body>
+<div class="container-fluid firstContainer">
+            <div class="row">
+                <div class="col-md-12 judul">
+                    <div class="col-md-2">
+                        <center><img alt="Logo-UNPAS" src="resources/img/logo-unpas.png" class="logo"/></center>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="title">
+                            <h2>
+                                <strong> Akademik Universitas Pasundan</strong>
+                            </h2>
+                            <h4>Jadwal Akademik</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-home"></span> Beranda</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-list-alt"></span> Nilai</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-refresh"></span> Perwalian</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-calendar"></span> Jadwal</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--                header-->
+            </header>
+        </div>
+<!--    end header-->
+    
+	<div class="container">
+			<div class="row">
+				
+                                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                                    <div class="list-group">
+                                        <div class="list-group-item black" align="center"><span class="glyphicon glyphicon-calendar"> JADWAL</span></div>
+                                        <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-pencil">   Jadwal Mengajar</span></a>
+                                        <a href="jadwalKuliah.xhtml" class="list-group-item"><span class="glyphicon glyphicon-user"> Jadwal Mahasiswa</span></a>
+                                        <a href="inputJadwal.xhtml" class="list-group-item"><span class="glyphicon glyphicon-import"> Input Pengajar</span></a>
+                                        <a href="#" class="list-group-item"><span class="glyphicon glyphicon-check"> Kontrak Matkul</span></a>
+                                    </div>
+                                    </div>
+                            
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                <h3>Identitas Dosen</h3>
+                                <div class="panel panel-default">
+                                            <div class="panel-body form-group">
+                                                <table>
+                                                    <tr>
+                                                        <td>Nama</td>
+                                                        <td><input type="text" class="form-control" placeholder="Nama" /></td>
+                                                    </tr>
+                                                    <br/>
+                                                    <tr>
+                                                        <td>NID</td>
+                                                        <td><input type="text" class="form-control" placeholder="Nomor Induk Dosen"/></td>
+                                                    </tr>
+                                                    <br/>
+                                                    <tr>
+                                                        <td>Semester</td>
+                                                        <td>
+                                                            <select class="form-control">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                                <option>6</option>
+                                                                <option>7</option>
+                                                                <option>8</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <br/>
+                                                    <tr>
+                                                        <td>Tahun Ajaran </td>
+                                                        <td>
+                                                            <select class="form-control">
+                                                                <option>2009</option>
+                                                                <option>2010</option>
+                                                                <option>2011</option>
+                                                                <option>2012</option>
+                                                                <option>2013</option>
+                                                            </select>
+                                                        </td>
+                                                    </tr>
+                                                    <br/>
+                                                    
+                                                </table>
+                                            </div>
+                                        </div>
+                                
+                                </div>
+                                        </div>
+                                
+                                
+					<h3>Jadwal Mengajar</h3>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Senin</div>
+                                            <div class="panel-body">
+<!--                                                <table border="3" cellpadding="10">
+                                                    <tr align="center">
+                                                        <th>No</th>
+                                                        <th>Jam</th>
+                                                        <th>Ruang</th>
+                                                        <th>Kode MK</th>
+                                                        <th>Mata Kuliah</th>
+                                                        <th>Kelas</th>
+                                                        <th>SKS</th>
+                                                        <th>Prodi</th>
+                                                    </tr>
+                                                    
+                                                    <tr align="center">
+                                                        <td>1</td>
+                                                            <td>07.00-09.00</td>
+                                                            <td>SB401</td>
+                                                            <td>IT220</td>
+                                                            <td>Pemrograman Web 1</td>
+                                                            <td>A</td>
+                                                            <td>3</td>
+                                                            <td>Informatika</td>
+                                                        </td>
+                                                    </tr>
+                                                </table>-->
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Selasa</div>
+                                            <div class="panel-body">
+                                                tab
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Rabu</div>
+                                            <div class="panel-body">
+                                                Panel conte nt
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Kamis</div>
+                                            <div class="panel-body">
+                                                Panel content
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Jum'at</div>
+                                            <div class="panel-body">
+                                                Panel content
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">Sabtu</div>
+                                            <div class="panel-body">
+                                                Panel content
+                                            </div>
+                                        </div>
+                                        
+				</div>
+                        </div>
+<!--		<div class="col-md-7">
+			<div class="row">
+				<div class="col-md-12">
+					<center>
+						<h3>Input Dosen</h3>
+					</center>
+				</div>
+			</div>
+
+			 ROW UNTUK FORM 
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+
+					<form action="#" class="form-group">
+
+						<div class="row">
+							<div class="col-md-4">Id Dosen</div>
+							<div class="col-md-8">
+								<input type="text" class="form-control" name="idDosen" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-4">Nama Dosen</div>
+							<div class="col-md-8">
+								<input type="text" class="form-control" name="namaDosen" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-4">Kode Matakuliah</div>
+							<div class="col-md-8">
+								<input type="text" class="form-control" name="kodeMatkul" />
+							</div>
+						</div>
+						<br /> <br />
+						<div class="row">
+							<div class="col-md-4">Matakuliah</div>
+							<div class="col-md-8">
+								<input type="text" class="form-control" name="matkul" />
+							</div>
+						</div>
+						<br /> <br />
+						<div class="row">
+							<div class="col-md-4">SKS</div>
+							<div class="col-md-8">
+								<input type="number" class="form-control" name="sks" length="1" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-4">Jam</div>
+							<div class="col-md-8">
+								<input type="time" class="form-control" name="jadwalMengajar" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-4">Kelas</div>
+							<div class="col-md-8">
+								<input type="text" class="form-control" name="jamMengajar" />
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-md-12">
+								<div class="btn-group" style="float: right;">
+									<button class="btn btn-default" name="simpan">Simpan</button>
+								</div>
+							</div>
+						</div>
+						<br />
+
+					</form>
+
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+
+		</div>-->
+	</div>
+        
+<!--        footer-->
+<center>
+            <div class="container-fluid thirdContainer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <br/><br/>
+                        <center><img alt="Logo UNPAS" src="resources/img/logo-unpas.png" class="logo-footer"/></center>
+                    </div>
+                    <div class="col-md-4">
+                        <br/><br/>
+                        <h4>ABOUT US</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.unpas.ac.id/"><i class="fa fa-home"> www.unpas.ac.id</i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/pages/Universitas-Pasundan-UNPAS-Bandung/123782791001199?ref=br_rs"><i class="fa fa-facebook-square"> Universitas Pasundan (UNPAS) Bandung</i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/unpas_bandung"><i class="fa fa-twitter"> @unpas_bandung</i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/unpas_bandung/"><i class="fa fa-instagram"> unpas_bandung</i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <br/>
+                    <div class="col-md-5">
+                        <h4>UNIVERSITAS PASUNDAN BANDUNG</h4>
+                        <h5>Jalan Doktor Setiabudi Nomor 193 Bandung</h5>
+                        <h5>Jawa Barat, Indonesia</h5>
+                        <br/>
+                        <h4>CALL CENTER</h4>
+                        <h5>(022) 2021440, 2021436</h5>
+                        <h5>humas@unpas.ac.id</h5>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+
+
+	<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</h:body>
+</html>

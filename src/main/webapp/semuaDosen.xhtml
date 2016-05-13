@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"></meta>
+	<title>Hello World</title>
+	<link href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"
+		rel="stylesheet" />
+	<link href="webjars/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+		rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	</link>
+</h:head>
+<h:body>
+<div class="container-fluid firstContainer">
+            <div class="row">
+                <div class="col-md-12 judul">
+                    <div class="col-md-2">
+                        <center><img alt="Logo-UNPAS" src="resources/img/logo-unpas.png" class="logo"/></center>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="title">
+                            <h2>
+                                <strong> Akademik Universitas Pasundan</strong>
+                            </h2>
+                            <h4>Jadwal Akademik</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-home"></span> Beranda</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-list-alt"></span> Nilai</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-refresh"></span> Perwalian</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-calendar"></span> Jadwal</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--                header-->
+            </header>
+        </div>
+<!--    end header-->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<center>
+						<h3>Header</h3>
+					</center>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Dashboard</h3>
+				</div>
+			</div>
+			<div class="row">
+				<!-- UNTUK SIDEBAR -->
+				<div class="col-md-12">
+					<nav class="navbar navbar-default " role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#navbar-collapsible2">
+							<span class="sr-only">Toggle navigation</span> <span
+								class="icon-bar"></span> <span class="icon-bar"></span> <span
+								class="icon-bar"></span>
+						</button>
+					</div>
+					<br />
+					<div class="navbar-collapse collapse" id="navbar-collapsible2">
+						<br />
+						<div class="panel-group" id="panel-802513">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a class="panel-title collapsed" data-toggle="collapse"
+										data-parent="#panel-802513" href="#panel-element-829197">Dosen
+										Pengajar</a>
+								</div>
+								<div id="panel-element-829197" class="panel-collapse collapse">
+									<a href="semuaDosen.jsf"><div class="panel-body">Daftar
+											Dosen</div></a> <a href="inputDosen.jsf"><div class="panel-body">Tambah
+											Dosen</div></a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-group" id="panel-802513">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a class="panel-title collapsed" data-toggle="collapse"
+										data-parent="#panel-802513" href="#panel-element-829197">Dosen
+										Pengajar</a>
+								</div>
+								<div id="panel-element-829197" class="panel-collapse collapse">
+									<a href="semuaDosen.jsf"><div class="panel-body">Daftar
+											Dosen</div></a> <a href="inputDosen.jsf"><div class="panel-body">Tambah
+											Dosen</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					</nav>
+				</div>
+				<!-- END SIBDEBAR -->
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-12">
+					<center>
+						<h3>Input Dosen</h3>
+					</center>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group btn-right">
+						<a href="inputDosen.jsf"><button type="submit"
+								class="btn btn-default" name="tambah">Tambah</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Id Dosen</th>
+									<th>Nama Dosen</th>
+									<th>Kode Matakuliah</th>
+									<th>Matakuliah</th>
+									<th>SKS</th>
+									<th>Jam</th>
+									<th>Kelas</th>
+									<th colspan="2">Update / Delete</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>D001</td>
+									<td>Agus Supriatna</td>
+									<td>MK005</td>
+									<td>Rekayasa Perangkat Lunak</td>
+									<td>3</td>
+									<td>10.00</td>
+									<td>A</td>
+									<td>
+										<div class="btn-group">
+											<button type="update" name="update" class="btn btn-default">Update</button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="submit" class="btn btn-danger">Delete</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>D001</td>
+									<td>Agus Supriatna</td>
+									<td>MK005</td>
+									<td>Rekayasa Perangkat Lunak</td>
+									<td>3</td>
+									<td>10.00</td>
+									<td>A</td>
+									<td>
+										<div class="btn-group">
+											<button type="update" name="update" class="btn btn-default">Update</button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="submit" class="btn btn-danger">Delete</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>D001</td>
+									<td>Agus Supriatna</td>
+									<td>MK005</td>
+									<td>Rekayasa Perangkat Lunak</td>
+									<td>3</td>
+									<td>10.00</td>
+									<td>A</td>
+									<td>
+										<div class="btn-group">
+											<button type="update" name="update" class="btn btn-default">Update</button>
+										</div>
+									</td>
+									<td>
+										<div class="btn-group">
+											<button type="submit" class="btn btn-danger">Delete</button>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<!--        footer-->
+<center>
+            <div class="container-fluid thirdContainer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <br/><br/>
+                        <center><img alt="Logo UNPAS" src="resources/img/logo-unpas.png" class="logo-footer"/></center>
+                    </div>
+                    <div class="col-md-4">
+                        <br/><br/>
+                        <h4>ABOUT US</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="http://www.unpas.ac.id/"><i class="fa fa-home"> www.unpas.ac.id</i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/pages/Universitas-Pasundan-UNPAS-Bandung/123782791001199?ref=br_rs"><i class="fa fa-facebook-square"> Universitas Pasundan (UNPAS) Bandung</i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/unpas_bandung"><i class="fa fa-twitter"> @unpas_bandung</i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/unpas_bandung/"><i class="fa fa-instagram"> unpas_bandung</i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <br/>
+                    <div class="col-md-5">
+                        <h4>UNIVERSITAS PASUNDAN BANDUNG</h4>
+                        <h5>Jalan Doktor Setiabudi Nomor 193 Bandung</h5>
+                        <h5>Jawa Barat, Indonesia</h5>
+                        <br/>
+                        <h4>CALL CENTER</h4>
+                        <h5>(022) 2021440, 2021436</h5>
+                        <h5>humas@unpas.ac.id</h5>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+
+	<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+	<script src="webjars/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</h:body>
+</html>
